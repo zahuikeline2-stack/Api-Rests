@@ -6,7 +6,7 @@ RUN npm install -g bun
 
 COPY package.json bun.lock ./
 
-RUN bun install
+RUN bun install --ignore-scripts
 
 COPY . .
 
